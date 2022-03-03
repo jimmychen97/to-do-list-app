@@ -24,7 +24,7 @@ function newItem() {
   let crossOutButton = $('<crossOutButton></crossOutButton>');
   crossOutButton.append(document.createTextNode('X'));
   li.append(crossOutButton);
-  li.on("click", () => {
+  crossOutButton.on("click", () => {
     li.addClass('delete');
   });
 
